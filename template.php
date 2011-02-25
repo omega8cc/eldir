@@ -1,5 +1,4 @@
 <?php
-// $Id$
 
 /**
  * Implements a D6 preprocess emulation layer.

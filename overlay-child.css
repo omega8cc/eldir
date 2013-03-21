@@ -75,6 +75,11 @@ html.js body {
 
 #overlay div#page {
   padding-bottom: 0;
+  background: none;
+  }
+
+#overlay div#page .limiter {
+  background: none;
   }
 
 #branding {

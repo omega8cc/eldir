@@ -594,6 +594,8 @@ body.aegir fieldset {
 
     body.aegir fieldset.collapsible div.fieldset-wrapper { padding:10px; }
 
+    body.aegir fieldset.collapsible div.fieldset-wrapper div.fieldset-wrapper { background-color: #fff }
+
   html.js body.aegir fieldset.collapsed {
     height:0px;
     margin:10px 0px;

@@ -994,3 +994,14 @@ body.error-page div.page-content {
   border : 1px solid black;
 
 }
+
+/* Views exposed forms */
+
+.views-exposed-form .views-exposed-widget {
+  padding: 0;
+}
+
+.views-exposed-form div.form-item {
+  border-bottom: 0;
+}
+

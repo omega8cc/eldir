@@ -987,7 +987,7 @@ body.error-page div.page-content {
 .modalframe {
   color: #000000;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .modalframe .ui-dialog-titlebar {

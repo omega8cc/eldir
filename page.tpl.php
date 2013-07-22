@@ -34,6 +34,7 @@
       <div class='page-content'>
         <?php print render($page['help']); ?>
         <?php print render($page['content']); ?>
+        <?php print render($page['content_bottom']); ?>
         <?php print $feed_icons ?>
       </div>
     </div><!-- /main -->

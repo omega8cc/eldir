@@ -16,7 +16,6 @@ function _phptemplate_variables($hook, $vars) {
  * Preprocessor for theme_page().
  */
 function eldir_preprocess_page(&$vars) {
-  $vars['logo'] = l($vars['site_name'], '<front>');
 
   if ($primary = menu_primary_local_tasks()) {
     $vars['tabs'] = "<ul class='links tabs clear-block'>{$primary}</ul>";

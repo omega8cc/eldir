@@ -11,7 +11,9 @@
   <body class='aegir <?php print $body_classes ?>'>
 
   <div id="header" class='reverse'><div class='limiter clear-block'>
-    <div class='logo'><?php print $logo ?></div>
+    <div class='logo'>
+      <a href="/"><img src="<?php print $logo ?>"/></a>
+    </div>
     <?php if ($site_name): ?><div class='site-name'><?php print $site_name ?></div><?php endif; ?>
     <?php if ($search_box) print $search_box ?>
   </div></div><!-- /header -->

@@ -1,5 +1,4 @@
 <?php
-// $Id$
 
 /**
  * Preprocessor for theme_page().
@@ -24,13 +23,15 @@ function eldir_preprocess_page(&$variables, $hook) {
     $variables['action_links']['#access'] = FALSE;
   }
 
+  $variables['title'] = isset($variables['title']) ? $variables['title'] : $variables['node']->title;
+
   $node = menu_get_object();
   if (!empty($node) && !$variables['overlay']) {
     // Add a node type label on node pages to help users.
     $types = node_type_get_types();
     $type = $node->type;
     if (!empty($types[$type])) {
-      $variables['title'] = "<span class='label'>{$types[$type]->name}</span>" . (isset($variables['title']) ? $variables['title'] : drupal_get_title());
+      $variables['title'] = "<span class='label'>{$types[$type]->name}</span>" . $variables['title'];
 
     }
   }

@@ -23,7 +23,9 @@ function eldir_preprocess_page(&$variables, $hook) {
     $variables['action_links']['#access'] = FALSE;
   }
 
-  $variables['title'] = isset($variables['title']) ? $variables['title'] : $variables['node']->title;
+  if (!isset($variables['title'])) {
+    $variables['title'] = isset($variables['node']) ? $variables['node']->title : drupal_get_title();
+  }
 
   $node = menu_get_object();
   if (!empty($node) && !$variables['overlay']) {

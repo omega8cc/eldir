@@ -789,7 +789,7 @@ table.hosting-table th {
   width:280px;
   }
 
-#hosting-site-list { clear: both }
+table.views-table { clear: both }
 
   #hosting-site-edit-info,
   #hosting-site-edit-info div.form-item {

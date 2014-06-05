@@ -1,7 +1,9 @@
 <div id="page-wrapper">
 
   <div id="header" class='reverse'><div class='limiter clearfix'>
-    <div class='logo'><?php print $logo ?></div>
+      <div class="logo">
+        <img src="<?php print $svg_logo; ?>" onerror="this.src='<?php print $logo; ?>'" />
+      </div>
     <?php if ($site_name): ?><div class='site-name'><?php print $site_name ?></div><?php endif; ?>
   </div></div><!-- /header -->
 

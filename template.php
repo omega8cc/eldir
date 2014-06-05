@@ -4,8 +4,10 @@
  * Preprocessor for theme_page().
  */
 function eldir_preprocess_page(&$variables, $hook) {
-
-  $variables['logo'] = l($variables['site_name'], '<front>');
+  // Prepare the svg URL
+  if (strpos($variables['logo'], 'eldir')) {
+    $variables['svg_logo'] = str_replace('logo.png', 'images-source/aegir_logo_horizontal.svg', $variables['logo']);
+  }
 
   // Overlay is enabled.
   $variables['overlay'] = (module_exists('overlay') && overlay_get_mode() === 'child');

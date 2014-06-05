@@ -155,7 +155,6 @@ div#console div.messages ul li { list-style: square; }
  * HEADER =============================================================
  */
 div#header {
-  line-height:80px;
   background:url(images/sprite.png) repeat-x;
   }
 
@@ -163,13 +162,11 @@ div#header div.logo,
 div#header div.logo a,
 div#header div.site-name { float:left; }
 
-div#header div.logo a {
-  background: url(images/sprite.png) 0px -120px no-repeat;
-  text-indent:-999px;
-  overflow:hidden;
-  height:80px;
-  width:120px;
-  }
+.logo img {
+  width: 120px;
+  margin-right: 10px;
+  margin-top: 18px;
+}
 
 div#header div.site-name {
   font-size:18px;

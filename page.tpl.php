@@ -3,7 +3,7 @@
   <div id="header" class='reverse'><div class='limiter clearfix'>
       <?php if (isset($logo)): ?>
       <div class="logo">
-        <img src="<?php print $svg_logo; ?>" onerror="this.src='<?php print $logo; ?>'" />
+        <a href="<?php print $front_page; ?>"><img src="<?php print $svg_logo; ?>" onerror="this.src='<?php print $logo; ?>'" /></a>
       </div>
       <?php endif; ?>
     <?php if ($site_name): ?><div class='site-name'><?php print $site_name ?></div><?php endif; ?>

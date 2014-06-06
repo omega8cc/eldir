@@ -1004,6 +1004,7 @@ body.error-page div.page-content {
  * Login forms
  */
 body.not-logged-in.page-user {
+  background: #16527f;
   background: linear-gradient(#16527f, #151f3e);
   min-height: 100%;
   min-width: 350px;

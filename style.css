@@ -533,7 +533,7 @@ input.form-submit {
   }
 
 .form-submit {
-  width: 25%;
+  width: 100%;
   min-width: 80px;
   text-align:center;
   display:block;

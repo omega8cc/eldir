@@ -52,6 +52,14 @@ p, blockquote {
   padding:0px;
   }
 
+div.views-bulk-operations-select, .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
 ul, ol,
 .item-list ul, .item-list ol {
   margin-left: 1em;

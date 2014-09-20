@@ -52,7 +52,7 @@ p, blockquote {
   padding:0px;
   }
 
-#views-bulk-operations-form-hosting-site-list-block-client.form-select {
+#views-bulk-operations-form-hosting-site-list-block-client .form-select {
   background:#fff;
   list-style:none;
   position:absolute;

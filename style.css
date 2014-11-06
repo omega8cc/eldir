@@ -1019,3 +1019,24 @@ body.not-logged-in.page-user h2.title {
   border-radius: 10px;
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, .25);
 }
+
+
+/**
+ * Permissions table ==================================================
+ */
+#user-admin-perm table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#user-admin-perm th {
+  width: 100%;
+}
+
+#user-admin-perm th:first-of-type {
+  width: 170px;
+}
+
+.sticky-header{
+  z-index: 1;
+}

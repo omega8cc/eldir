@@ -1001,3 +1001,22 @@ body.error-page div.page-content {
   border-bottom: 0;
 }
 
+/**
+ * Permissions table ==================================================
+ */
+#user-admin-perm table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#user-admin-perm th {
+  width: 100%;
+}
+
+#user-admin-perm th:first-of-type {
+  width: 170px;
+}
+
+.sticky-header{
+  z-index: 1;
+}

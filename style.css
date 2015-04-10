@@ -575,6 +575,10 @@ div.form-item div.description {
   color:#666;
   }
 
+form input#edit-publish-path {
+  width:auto;
+  }
+
 /* Fieldsets... what a nightmare */
 body.aegir fieldset {
   background:#f8f8f8;

@@ -1012,12 +1012,23 @@ div.hosting-queue-frequency select {
   font-size:10px;
   }
 
+#form-item-backup-queue-frequency-items,
+#form-item-tasks-frequency-items,
 #edit-backup-queue-frequency-items-wrapper,
 #edit-tasks-frequency-items-wrapper {
     float: left;
     margin: 0 0 5px 0;
 }
 
+#form-item-backup-queue-frequency-items input,
+#form-item-backup-queue-frequency-ticks input,
+#form-item-backup-gc-frequency-ticks input,
+#form-item-advanced-cron-frequency-ticks input,
+#form-item-civicrm-cron-frequency-ticks input,
+#form-item-task-gc-frequency-ticks input,
+#form-item-cron-frequency-ticks input,
+#form-item-tasks-frequency-items input,
+#form-item-tasks-frequency-ticks input,
 #edit-backup-queue-frequency-items-wrapper input,
 #edit-backup-queue-frequency-ticks-wrapper input,
 #edit-backup-gc-frequency-ticks-wrapper input,
@@ -1031,6 +1042,12 @@ div.hosting-queue-frequency select {
     margin: 0 5px 0 0;
 }
 
+#form-item-backup-gc-frequency-ticks,
+#form-item-backup-queue-frequency-ticks,
+#form-item-advanced-cron-frequency-ticks,
+#form-item-civicrm-cron-frequency-ticks,
+#form-item-task-gc-frequency-ticks,
+#form-item-cron-frequency-ticks,
 #edit-backup-gc-frequency-ticks-wrapper,
 #edit-backup-queue-frequency-ticks-wrapper,
 #edit-advanced-cron-frequency-ticks-wrapper,
@@ -1040,12 +1057,21 @@ div.hosting-queue-frequency select {
     float: left;
 }
 
+#form-item-backup-queue-frequency-ticks,
+#form-item-tasks-frequency-ticks,
 #edit-backup-queue-frequency-ticks-wrapper,
 #edit-tasks-frequency-ticks-wrapper {
     float: left;
     clear: both;
 }
 
+#form-item-backup-gc-frequency-unit,
+#form-item-backup-queue-frequency-unit,
+#form-item-advanced-cron-frequency-unit,
+#form-item-civicrm-cron-frequency-unit,
+#form-item-task-gc-frequency-unit,
+#form-item-tasks-frequency-unit,
+#form-item-cron-frequency-unit,
 #edit-backup-gc-frequency-unit-wrapper,
 #edit-backup-queue-frequency-unit-wrapper,
 #edit-advanced-cron-frequency-unit-wrapper,

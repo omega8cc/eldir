@@ -1,3 +1,4 @@
+
 /**
  * Eldir for Drupal 7
  * Designed for the Aegir hosting system.
@@ -50,6 +51,60 @@ p, blockquote {
   margin:0px;
   padding:0px;
   }
+
+#views-bulk-operations-form-hosting-site-list-block-client .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-bulk-operations-form-hosting-platform-list-page-platforms .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-bulk-operations-form-hosting-site-list-page-1 .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-bulk-operations-form-hosting-site-list-block-1 .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-bulk-operations-form-hosting-site-list-block-profile .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-exposed-form-hosting-package-list-page-packages-site .form-select {
+  background:#fff;
+  list-style:none;
+  text-align:center;
+  margin:3px;
+  padding:3px;
+  left:0px; top:0px; width:auto; min-width:30px;
+}
+
+#views-exposed-form-hosting-package-list-page-packages-site .form-submit {
+  margin-top:28px;
+  padding-top:5px;
+}
 
 ul, ol,
 .item-list ul, .item-list ol {
@@ -163,6 +218,7 @@ div#console div.messages ul li { list-style: square; }
  * HEADER =============================================================
  */
 div#header {
+  line-height:80px;
   background:url(images/sprite.png) repeat-x;
   }
 
@@ -170,11 +226,13 @@ div#header div.logo,
 div#header div.logo a,
 div#header div.site-name { float:left; }
 
-.logo img {
-  width: 120px;
-  margin-right: 10px;
-  margin-top: 18px;
-}
+div#header div.logo a {
+  background: url(images/sprite.png) 0px -120px no-repeat;
+  text-indent:-999px;
+  overflow:hidden;
+  height:80px;
+  width:120px;
+  }
 
 div#header div.site-name {
   font-size:18px;
@@ -218,12 +276,22 @@ div#navigation ul.links {
   float:right;
   }
 
+div#navigation ul.links li {
+  float:right;
+  }
+
   div#navigation ul.links a {
+    -moz-border-radius: 0px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-radius: 0px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
     background:#147;
-    font-size:11px;
-    line-height:25px;
+    font-size:12px;
+    line-height:26px;
     padding:5px 15px;
-    margin-right:1px;
+    margin-left:4px;
     }
 
   div#navigation ul.links a:hover {
@@ -244,7 +312,7 @@ div#header-region {
   padding:20px 0px 0px;
   background:#e8e8e8 url(images/grid_e8.png) 50% 0% repeat; }
 
-div#header-region h2.page-title {
+div#header-region h1.page-title {
   border:0px;
   padding:0px 0px 10px;
   letter-spacing:-2px;
@@ -254,7 +322,7 @@ div#header-region h2.page-title {
   font-weight:normal;
   }
 
-  div#header-region h2.page-title span.label {
+  div#header-region h1.page-title span.label {
     font-size:13px;
     font-weight:bold;
     letter-spacing:0px;
@@ -264,7 +332,7 @@ div#header-region h2.page-title {
     padding:0px 10px;
     line-height:30px;
 
-    background:#666;
+    background:#4372aa;
     color:#fff;
     }
 
@@ -277,16 +345,23 @@ div#header-region ul.tabs { clear:both; }
   div#header-region ul.tabs li a {
     padding:5px 15px;
     font-size:11px;
+    -moz-border-radius: 0px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-radius: 0px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    margin-left:2px;
     }
 
   div#header-region ul.tabs li a:hover {
-    background:#666;
+    background:#4372aa;
     color:#fff;
     }
 
   div#header-region ul.tabs li.active a,
   div#header-region ul.tabs li a.active {
-    padding: 5px 15px;
+    padding:5px 15px 5px;
     background:#fff;
     color:#444;
     border-bottom:1px solid #fff;
@@ -308,6 +383,12 @@ div#page div.limiter { background:url(images/page.png) repeat-y; }
     }
 
 div#main {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow:    0 0 5px 2px #ccc;
+  -webkit-box-shadow: 0 0 5px 2px #ccc;
+  box-shadow:         0 0 5px 2px #ccc;
+  background:#fff;
   float:left;
   width:600px;
   padding:10px;
@@ -326,6 +407,19 @@ div.sidebar {
   padding:10px;
   }
 
+div.sidebar h2, div.page-content h1 {
+  margin:0px;
+  padding:0px;
+  display:none;
+  overflow:hidden;
+  height:0px;
+  }
+
+div#hosting-task-queue-block {
+  margin-top:0px;
+  padding-top:0px;
+  }
+
 #page ul.tabs {
   height:29px;
   border-bottom:1px solid #e8e8e8;
@@ -337,7 +431,7 @@ div.sidebar {
  */
 div.sidebar div.block { margin:0px 0px 20px; }
 
-div.sidebar div.block div.content { padding:5px 0px 0px; }
+div.sidebar div.block div.content { padding:5px 5px 5px; }
 
 div.sidebar div.item-list { margin:0px 0px 10px; }
 
@@ -372,23 +466,23 @@ div.sidebar div.item-list li {
   div.sidebar ul.menu li,
   div.sidebar ul.menu a,
   div.sidebar div.item-list li {
-    -moz-border-radius:3px;
+    -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     }
 
   div.sidebar ul.menu li.expanded a {
-    -moz-border-radius:0px;
-    -moz-border-radius-topleft:3px;
-    -moz-border-radius-topright:3px;
+    -moz-border-radius: 0px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
 
     -webkit-border-radius: 0px;
-    -webkit-border-top-left-radius:3px;
-    -webkit-border-top-right-radius:3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
     }
 
     div.sidebar ul.menu li.expanded li,
     div.sidebar ul.menu li.expanded li a {
-      -moz-border-radius:0px;
+      -moz-border-radius: 0px;
       -webkit-border-radius: 0px;
       }
 
@@ -448,7 +542,7 @@ div.krumo-root, div.krumo-root a {
  * FOOTER =============================================================
  */
 #footer {
-  background:#666;
+  background:#4372aa;
   padding:20px 0px;
   line-height:40px;
   height:40px;
@@ -497,14 +591,22 @@ input.form-submit {
   border:0px;
   padding:5px 10px;
   color:#fff;
-  background:#666;
-
+  background:#4372aa;
   cursor:pointer;
-
-  -moz-border-radius:3px;
+  text-align:center;
+  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   }
 
+.form-submit {
+  width: 100%;
+  min-width: 80px;
+  text-align:center;
+  display:block;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 input.form-submit[disabled] {
   color:#ddd;
@@ -569,14 +671,14 @@ form div.form-item {
 div.form-item label.option,
 div.form-item label.option * {
   font-size:1em;
-  vertical-align:middle;
+  vertical-align:inherit;
   }
 
 div.form-item div.description {
   margin:5px 0px;
   line-height:15px;
   font-size:11px;
-  color:#666;
+  color:#4372aa;
   }
 
 form input#edit-publish-path {
@@ -592,7 +694,7 @@ body.aegir fieldset {
   border:0px;
 
   display:block;
-  -moz-border-radius:3px;
+  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   }
 
@@ -602,6 +704,8 @@ body.aegir fieldset {
     }
 
     body.aegir fieldset.collapsible div.fieldset-wrapper { padding:10px; }
+
+    body.aegir fieldset.collapsible div.fieldset-wrapper div.fieldset-wrapper { background-color: #fff }
 
   html.js body.aegir fieldset.collapsed {
     height:0px;
@@ -631,15 +735,15 @@ html.js body.aegir fieldset.collapsible legend a {
   }
 
 body.aegir fieldset.collapsible legend a {
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-topright:3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
   -webkit-border-top-left-radius: 3px;
   -webkit-border-top-right-radius: 3px;
   }
 
   body.aegir fieldset.collapsed legend a {
-    -moz-border-radius:3px;
-    -webkit-border-radius:3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     }
 
 /**
@@ -665,14 +769,14 @@ div.sticky {
     margin:0px;
     }
 
-div.node h2 {
+div.node h1 {
   border:0px;
   font-size:24px;
   line-height:30px;
   font-weight:normal;
   }
 
-  div.node h2 span.label {
+  div.node h1 span.label {
     float:left;
     font-size:9px;
     font-weight:bold;
@@ -681,18 +785,18 @@ div.node h2 {
     margin:5px 10px 0px 0px;
     padding:0px 5px;
 
-    background:#666;
+    background:#4372aa;
     color:#fff;
     }
 
-div.node div.submitted {
+div.node div.meta {
   color:#888;
   margin:0px 0px 10px;
   font-size:11px;
   }
 
-  body.node-page div.node div.submitted {
-    border-bottom:1px solid #e8e8e8;
+  body.node-page div.node div.meta {
+    border-bottom:0px solid #e8e8e8;
     padding:0px 0px 9px;
     }
 
@@ -710,6 +814,54 @@ div.node ul.links {
     border:0px;
     padding-right:0px;
     }
+
+/**
+ * COMMENTS ===========================================================
+ */
+div.comment ul.links li {
+  padding:5px 5px 0px;
+  margin-right:5px;
+  float:right;
+  font-size:11px;
+  }
+
+div.node ul.links li.comment_add {
+  padding:5px 5px 0px;
+  margin-right:5px;
+  font-size:11px;
+  }
+
+.credit {
+  padding-left:3px;
+  padding-right:3px;
+  }
+
+.submitted {
+  font-size:10px;
+  padding-left:2px;
+  margin-left:2px;
+  }
+
+div.comment h3 {
+  font-size:12px;
+  line-height:12px;
+  padding-left:2px;
+  margin-left:2px;
+  }
+
+div.comment div.content p {
+  font-size:11px;
+  line-height:15px;
+  padding-left:2px;
+  margin-left:2px;
+  }
+
+div.comment-folded {
+  font-size:11px;
+  line-height:17px;
+  padding-left:2px;
+  margin-left:2px;
+  }
 
 /**
  * AEGIR-SPECIFIC =====================================================
@@ -754,7 +906,7 @@ table.hosting-table td {
 table th,
 table.hosting-table th {
   font-size:11px;
-  background:#666 !important;
+  background:#4372aa !important;
   }
 
  table th.active,
@@ -794,6 +946,7 @@ table.hosting-table th {
   width:280px;
   }
 
+#hosting-site-list { clear: both }
 table.views-table { clear: both }
 
   #hosting-site-edit-info,
@@ -859,11 +1012,18 @@ div.hosting-queue-frequency select {
   font-size:10px;
   }
 
+#edit-backup-queue-frequency-items-wrapper,
 #edit-tasks-frequency-items-wrapper {
     float: left;
     margin: 0 0 5px 0;
 }
 
+#edit-backup-queue-frequency-items-wrapper input,
+#edit-backup-queue-frequency-ticks-wrapper input,
+#edit-backup-gc-frequency-ticks-wrapper input,
+#edit-advanced-cron-frequency-ticks-wrapper input,
+#edit-civicrm-cron-frequency-ticks-wrapper input,
+#edit-task-gc-frequency-ticks-wrapper input,
 #edit-cron-frequency-ticks-wrapper input,
 #edit-tasks-frequency-items-wrapper input,
 #edit-tasks-frequency-ticks-wrapper input {
@@ -871,15 +1031,26 @@ div.hosting-queue-frequency select {
     margin: 0 5px 0 0;
 }
 
+#edit-backup-gc-frequency-ticks-wrapper,
+#edit-backup-queue-frequency-ticks-wrapper,
+#edit-advanced-cron-frequency-ticks-wrapper,
+#edit-civicrm-cron-frequency-ticks-wrapper,
+#edit-task-gc-frequency-ticks-wrapper,
 #edit-cron-frequency-ticks-wrapper {
     float: left;
 }
 
+#edit-backup-queue-frequency-ticks-wrapper,
 #edit-tasks-frequency-ticks-wrapper {
     float: left;
     clear: both;
 }
 
+#edit-backup-gc-frequency-unit-wrapper,
+#edit-backup-queue-frequency-unit-wrapper,
+#edit-advanced-cron-frequency-unit-wrapper,
+#edit-civicrm-cron-frequency-unit-wrapper,
+#edit-task-gc-frequency-unit-wrapper,
 #edit-tasks-frequency-unit-wrapper,
 #edit-cron-frequency-unit-wrapper {
     float: left;
@@ -908,7 +1079,7 @@ a.hosting-button-enabled,
   padding-top: 0.1em;
   padding-bottom: 0.1em;
 
-  -moz-border-radius:3px;
+  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
 
@@ -979,6 +1150,13 @@ dl.multiselect div.form-item { margin:0px 0px 10px; }
   float: none;
 }
 
+body.admin-menu table.sticky-header, table.sticky-enabled thead {
+  margin-top: 25px !important;
+}
+table.sticky-header {
+  z-index: 10;
+}
+
 /**
  * ERROR PAGES ========================================================
  */
@@ -995,14 +1173,24 @@ body.error-page div.page-content {
 .modalframe {
   color: #000000;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: 1px solid black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .modalframe .ui-dialog-titlebar {
-  border : 1px solid black;
-
+  border-bottom: 1px solid black;
 }
 
+/* Views exposed forms */
+
+.views-exposed-form .views-exposed-widget {
+  padding: 0;
+}
+
+.views-exposed-form div.form-item {
+  border-bottom: 0;
+}
 
 /**
  * Login forms
@@ -1029,22 +1217,3 @@ body.not-logged-in.page-user h2.title {
 }
 
 
-/**
- * Permissions table ==================================================
- */
-#user-admin-perm table {
-  table-layout: fixed;
-  width: 100%;
-}
-
-#user-admin-perm th {
-  width: 100%;
-}
-
-#user-admin-perm th:first-of-type {
-  width: 170px;
-}
-
-.sticky-header{
-  z-index: 1;
-}

@@ -751,6 +751,11 @@ div#footer li {
   margin: 0px 12px 5px;
   }
 
+.filter-wrapper, div.filter-help, div.filter-guidelines-item {
+  display:none;
+  overflow:hidden;
+  }
+
 /**
  * NODES ==============================================================
  */

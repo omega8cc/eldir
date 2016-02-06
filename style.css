@@ -642,6 +642,11 @@ body.aegir fieldset.collapsible legend a {
     -webkit-border-radius:3px;
     }
 
+div#footer li {
+  font-weight:bold;
+  margin: 0px 12px 5px;
+  }
+
 /**
  * NODES ==============================================================
  */

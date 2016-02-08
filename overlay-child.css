@@ -33,7 +33,7 @@ html.js body {
   -webkit-border-radius:5px;
   border-radius:5px;
 
-  background:#444 url(images/buttons.png) -4000px 50% no-repeat;
+  background:#369 url(images/buttons.png) -4000px 50% no-repeat;
   display: block;
   position: absolute;
   height: 20px;
@@ -42,7 +42,7 @@ html.js body {
   padding: 0px;
   }
 
-  #overlay-close:active { background:#333 url(images/buttons.png) -4400px 50% no-repeat; }
+  #overlay-close:active { background:#e8e8e8 url(images/buttons.png) -4400px 50% no-repeat; }
 
 #overlay-content {
   background:#fff;
@@ -103,10 +103,13 @@ html.js body {
 
 .overlay div#header-region {
   padding: 0 10px;
-  background:url(images/bleeds.png) 0px -30px repeat-x;
-  color:#FFF;
+  /*background:url(images/bleeds.png) 0px -30px repeat-x; */
+  background-color:#369;
+  color:#369;
   height:30px;
   overflow:hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .overlay div#header-region h2.page-title {
@@ -115,6 +118,7 @@ html.js body {
   letter-spacing: normal;
   padding: 0;
   text-transform: uppercase;
+  display:none;
 }
 
 /**
@@ -132,9 +136,9 @@ html.js body {
   padding:0px;
   }
 
-#overlay-titlebar .add-or-remove-shortcuts a { background-color:#444; }
+#overlay-titlebar .add-or-remove-shortcuts a { background-color:#369; }
 
 #overlay-titlebar .add-or-remove-shortcuts a:active {
-  background-color:#333;
+  background-color:#e8e8e8;
   text-shadow:#555 0px 1px 0px;
   }

@@ -276,10 +276,6 @@ div#navigation ul.links {
   float:right;
   }
 
-div#navigation ul.links li {
-  float:right;
-  }
-
   div#navigation ul.links a {
     -moz-border-radius: 0px;
     -moz-border-radius-topleft: 3px;

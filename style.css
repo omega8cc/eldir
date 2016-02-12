@@ -594,7 +594,7 @@ input.form-submit {
   -webkit-border-radius: 3px;
   }
 
-.form-submit {
+.form-submit, #block-user-login, div.form-item-name, div.form-item-pass {
   width: 100%;
   min-width: 80px;
   text-align:center;

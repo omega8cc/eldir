@@ -52,6 +52,50 @@ p, blockquote {
   padding:0px;
   }
 
+#views-form-hosting-site-list-block-sites .form-submit {
+  margin-top:8px;
+  padding-top:5px;
+  list-style:none;
+}
+
+#views-form-hosting-site-list-block-sites .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-form-hosting-platform-list-page-platforms .form-submit {
+  margin-top:8px;
+  padding-top:5px;
+  list-style:none;
+}
+
+#views-form-hosting-platform-list-page-platforms .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+#views-form-hosting-site-list-page-sites .form-submit {
+  margin-top:8px;
+  padding-top:5px;
+  list-style:none;
+}
+
+#views-form-hosting-site-list-page-sites .form-select {
+  background:#fff;
+  list-style:none;
+  position:absolute;
+  text-align:center;
+  left:0px; top:0px; width:100%; min-width:222px;
+}
+
+
+
 #views-bulk-operations-form-hosting-site-list-block-client .form-select {
   background:#fff;
   list-style:none;

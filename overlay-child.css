@@ -116,9 +116,7 @@ html.js body {
   line-height: 30px;
   font-size: inherit;
   letter-spacing: normal;
-  padding: 0;
-  text-transform: uppercase;
-  display:none;
+  font-weight:bold;
 }
 
 /**

@@ -51,6 +51,11 @@
   </div></div>
 
   <div id="footer" class='reverse'><div class='limiter'>
+
+    <?php if ($site_footer = variable_get('site_footer', '')): ?>
+    <?php print render($site_footer); ?>
+    <?php endif; ?>
+
     <?php print render($page['footer']); ?>
     <?php if ($secondary_menu): ?>
         <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline')))); ?>

@@ -456,6 +456,15 @@ div.krumo-root, div.krumo-root a {
 
 #footer ul.links { float:right; }
 
+#footer ul.links li {
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul.links li a {
+  padding: 5px 0 5px 10px;
+}
+
 /**
  * FORMS ==============================================================
  */
@@ -646,6 +655,15 @@ div#footer li {
   font-weight:bold;
   margin: 0px 12px 5px;
   }
+
+/* Views Exposed Forms */
+.vbo-views-form .form-item-operation {
+  display: block;
+}
+.vbo-views-form .form-submit {
+  margin-top: 10px;
+}
+
 
 /**
  * NODES ==============================================================

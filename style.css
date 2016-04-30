@@ -1268,12 +1268,6 @@ body.error-page div.page-content {
 }
 
 /* Views Exposed Forms */
-.vbo-views-form .form-item-operation {
-  display: block;
-}
-.vbo-views-form .form-submit {
-  margin-top: 10px;
-}
 
 .views-exposed-form .views-exposed-widget {
   padding: 0;

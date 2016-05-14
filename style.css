@@ -805,6 +805,11 @@ div#footer li {
   overflow:hidden;
   }
 
+#hosting-site-field-ssl-key, #hosting-site-field-ssl-key-new, #hosting-site-field-ssl-key-description {
+  display:none;
+  overflow:hidden;
+  }
+
 /**
  * NODES ==============================================================
  */

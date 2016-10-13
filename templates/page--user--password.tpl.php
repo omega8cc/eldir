@@ -2,7 +2,7 @@
   <div id="top_part">
     <?php if (isset($logo)): ?>
       <h1 id="the_logo">
-        <a href="<?php print $front_page; ?>"><img src="<?php print $svg_logo; ?>" onerror="this.src='<?php print $logo; ?>'" /></a>
+        <a href="<?php print $front_page; ?>"><img src="<?php if (isset($svg_logo)): print $svg_logo; else: print $logo; endif ?>" /></a>
       </h1>
     <?php endif; ?>
   </div>

@@ -964,6 +964,7 @@ table.hosting-table th,
 table.hosting-table td {
   padding:4px 5px 5px;
   border-top:1px solid #fff;
+  position:relative;
   }
 
 .modalframe .ui-dialog-titlebar,

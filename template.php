@@ -19,6 +19,9 @@ function eldir_preprocess_page(&$variables, $hook) {
   // Move the local actions into place of the secondary tabs, for now.
   if (is_array($variables['action_links'])) {
     foreach ($variables['action_links'] as $link) {
+      if (!is_array($variables['tabs2']['#secondary'])) {
+        $variables['tabs2']['#secondary'] = array();
+      }
       $variables['tabs2']['#secondary'][] = $link;
       $variables['tabs2']['#theme'] = 'menu_local_tasks';
     }

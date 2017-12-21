@@ -150,6 +150,22 @@ ul.tabs li a,
 ul.links li,
 ul.links li a { float:left; }
 
+ul.action-links {
+  margin: 1em 0;
+  padding: 0 20px 0 20px; /* LTR */
+  list-style-type: none;
+  overflow: hidden;
+}
+ul.action-links li {
+  float: left; /* LTR */
+  margin: 0 1em 0 0; /* LTR */
+}
+ul.action-links a {
+  padding-left: 15px; /* LTR */
+  line-height: 30px;
+}
+
+
 /**
  * LISTS ==============================================================
  */

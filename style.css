@@ -151,7 +151,7 @@ ul.links li,
 ul.links li a { float:left; }
 
 ul.action-links {
-  margin: 1em 0;
+  margin: 0 0;
   padding: 0 20px 0 20px; /* LTR */
   list-style-type: none;
   overflow: hidden;

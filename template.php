@@ -58,8 +58,8 @@ function eldir_preprocess_html(&$variables, $hook) {
   $node = menu_get_object();
   if (!empty($node)) {
     $type = $node->type;
-    if (!is_array($variables['classes_array'][])) {
-      $variables['classes_array'][] = array();
+    if (!is_array($variables['classes_array'])) {
+      $variables['classes_array'] = array();
     }
     $variables['classes_array'][] = " node-page";
     $variables['classes_array'][] = " ntype-{$type}";
@@ -68,8 +68,8 @@ function eldir_preprocess_html(&$variables, $hook) {
   // Add path-based class for a last line of defense
   $current_path = current_path();
   if (!empty($current_path)) {
-    if (!is_array($variables['classes_array'][])) {
-      $variables['classes_array'][] = array();
+    if (!is_array($variables['classes_array'])) {
+      $variables['classes_array'] = array();
     }
     $variables['classes_array'][] = ' path-' . drupal_html_class(current_path());
   }

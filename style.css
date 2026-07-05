@@ -1289,3 +1289,10 @@ body.error-page div.page-content {
 .views-exposed-form div.form-item {
   border-bottom: 0;
 }
+
+/* BOA blocks system sendmail, so user/password cannot deliver reset mail;
+   control-panel password resets are requested from host support. Hide any
+   residual "Request new password" link so it is never offered. */
+a[href*="user/password"] {
+  display: none !important;
+}

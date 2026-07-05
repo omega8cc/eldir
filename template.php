@@ -54,6 +54,23 @@ function eldir_css_alter(&$css) {
   }
 }
 
+/**
+ * Implements hook_menu_local_tasks_alter().
+ *
+ * BOA blocks system sendmail, so the core "Request new password" flow at
+ * user/password cannot deliver reset mail. Drop its local-task tab so it is
+ * never offered; control-panel password resets are requested from host support.
+ */
+function eldir_menu_local_tasks_alter(&$data, $router_item, $root_path) {
+  if (isset($data['tabs'][0]['output']) && is_array($data['tabs'][0]['output'])) {
+    foreach ($data['tabs'][0]['output'] as $key => $tab) {
+      if (isset($tab['#link']['path']) && $tab['#link']['path'] == 'user/password') {
+        unset($data['tabs'][0]['output'][$key]);
+      }
+    }
+  }
+}
+
 function eldir_preprocess_html(&$variables, $hook) {
   $node = menu_get_object();
   if (!empty($node)) {

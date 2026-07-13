@@ -1296,3 +1296,21 @@ body.error-page div.page-content {
 a[href*="user/password"] {
   display: none !important;
 }
+
+/* Backdrop CMS badge: hosting_backdrop adds this title-suffix label on
+   Backdrop platform nodes and on site nodes hosted on them (the node
+   classes platform-backdrop / site-backdrop are available for wider
+   styling). Backdrop brand blue per backdropcms.org. */
+span.backdrop-badge {
+  background-color: #0074bd;
+  border-radius: 9px;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: 6px;
+  padding: 3px 9px 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+}

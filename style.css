@@ -1333,3 +1333,23 @@ span.grav-badge {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+/* Textpattern badge: hosting_txp adds this title-suffix label on Textpattern
+   platform nodes and on site nodes hosted on them (the node classes
+   platform-txp / site-txp are available for wider styling). Colour = the
+   signature Textpattern gold, taken from the shipped hive admin theme's own
+   accent (--clr-accent-grad-to #f5c400, text --clr-accent-dark family); gold
+   needs dark text, so this badge inverts the white-on-blue siblings above. */
+span.txp-badge {
+  background-color: #f5c400;
+  border-radius: 9px;
+  color: #272b30;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: 6px;
+  padding: 3px 9px 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+}

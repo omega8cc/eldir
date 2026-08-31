@@ -1314,3 +1314,22 @@ span.backdrop-badge {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+/* Grav badge: hosting_grav adds this title-suffix label on Grav platform
+   nodes and on site nodes hosted on them (the node classes platform-grav /
+   site-grav are available for wider styling). Colour = Grav Admin 2's own
+   primary (--primary in the shipped admin2 plugin theme), distinct from
+   the Backdrop blue above. */
+span.grav-badge {
+  background-color: #2463eb;
+  border-radius: 9px;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: 6px;
+  padding: 3px 9px 4px;
+  vertical-align: middle;
+  white-space: nowrap;
+}

@@ -45,6 +45,24 @@ function eldir_preprocess_page(&$variables, $hook) {
 }
 
 /**
+ * Preprocessor for maintenance-page.tpl.php.
+ *
+ * The maintenance pipeline never runs eldir_preprocess_page(), so the two
+ * things page.tpl.php's shell takes from it are prepared here: the SVG logo
+ * and the front-page breadcrumb the navigation band shows on every other page.
+ */
+function eldir_preprocess_maintenance_page(&$variables, $hook) {
+  // Prepare the svg URL
+  if (!empty($variables['logo']) && strpos($variables['logo'], 'eldir')) {
+    $variables['svg_logo'] = str_replace('logo.png', 'images-source/aegir_logo_horizontal.svg', $variables['logo']);
+  }
+
+  if (empty($variables['breadcrumb'])) {
+    $variables['breadcrumb'] = theme('breadcrumb', array('breadcrumb' => array(l(t('Home'), '<front>'))));
+  }
+}
+
+/**
  * Implements hook_css_alter().
  * @TODO: Do this in .info once http://drupal.org/node/575298 is committed.
  */

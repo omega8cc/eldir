@@ -38,7 +38,7 @@
     <div id="header" class='reverse'><div class='limiter clearfix'>
       <?php if (!empty($logo)): ?>
       <div class="logo">
-        <a href="<?php print $front_page; ?>"><img src="<?php if (isset($svg_logo)): print $svg_logo; else: print $logo; endif ?>" /></a>
+        <a href="<?php print $front_page; ?>"><img src="<?php if (isset($svg_logo)): print $svg_logo; else: print $logo; endif ?>" alt="<?php print t('Home'); ?>" /></a>
       </div>
       <?php endif; ?>
       <?php if (!empty($site_name)): ?><div class='site-name'><?php print $site_name; ?></div><?php endif; ?>

@@ -4,9 +4,12 @@ html.js {
   overflow-x:hidden;
   }
 
+/* No min-width: the page's 950px floor plus this padding made a pop-up
+   wider than a window between 960 and about 1045 pixels. */
 html.js body {
   background: transparent !important;
   padding:20px 40px;
+  min-width:0;
   }
 
 #overlay {
@@ -40,6 +43,9 @@ html.js body {
   width: 20px;
   margin: 5px;
   padding: 0px;
+  /* Keeps the hidden "Close overlay" label inside the button; on a phone it
+     would reach past the window's right edge. */
+  overflow: hidden;
   }
 
   #overlay-close:active { background:#e8e8e8 url(images/buttons.png) -4400px 50% no-repeat; }
@@ -60,8 +66,11 @@ html.js body {
 
 /*#overlay-content .limiter { margin:0px 20px; }*/
 
+/* No padding: the narrow-screen page gutter would push the pop-up's content
+   past the right edge of its box. */
 #overlay div.limiter {
   width: 100%;
+  padding: 0;
   }
 
 #overlay div#main {
@@ -140,3 +149,8 @@ html.js body {
   background-color:#e8e8e8;
   text-shadow:#555 0px 1px 0px;
   }
+
+/* Phones: the pop-up keeps a 10px side gutter instead of 40px. */
+@media (max-width: 599px) {
+  html.js body { padding: 20px 10px; }
+}

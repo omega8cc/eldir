@@ -1438,3 +1438,13 @@ span.txp-badge {
     padding-bottom: 6px;
     }
 }
+
+/* Core's overlay sets the pop-up's top margin from the toolbar's height
+   before it fits the toolbar to the new window width. After a window grows
+   from narrow to wide in one step, the toolbar is still clamped to the old
+   width at that moment and wraps, so the margin (and the pop-up's sticky
+   table header) stays that much too low until the next resize. Wide enough
+   for one row, the toolbar measures the same at both moments. */
+@media (min-width: 960px) {
+  #admin-menu { min-width: 940px; }
+}

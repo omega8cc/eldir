@@ -1386,4 +1386,13 @@ span.txp-badge {
     }
 
   div#main { overflow-x: auto; }
+
+  /* The sites and task lists keep one line per row by letting the name
+     cell give way to the other columns. Here that left a name a few
+     pixels wide, so it keeps a readable width and the table scrolls. */
+  .view-hosting-site-list table.views-table td.views-field-canonical,
+  .view-hosting-task-list table.views-table td.views-field-task-type {
+    max-width: 14em;
+    width: auto;
+    }
 }

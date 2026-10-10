@@ -1395,4 +1395,89 @@ span.txp-badge {
     max-width: 14em;
     width: auto;
     }
+
+  /* The admin toolbar: one row that scrolls sideways, at the top of the
+     page instead of fixed over it (the environment indicator sets the
+     fixed position inline, hence !important). Its fly-outs need a hover. */
+  #admin-menu { position: absolute !important; width: 100%; }
+
+  #admin-menu-wrapper {
+    width: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+
+  #admin-menu .dropdown,
+  #admin-menu #environment-indicator {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    }
+
+  #admin-menu .dropdown > li { float: none; display: inline-block; }
+
+  #admin-menu .dropdown li li { display: none; }
+
+  /* A 44px header: the logo image instead of the 80px sprite. */
+  div#header { line-height: 44px; }
+
+  div#header div.logo a {
+    width: auto;
+    height: 44px;
+    padding-right: 10px;
+    text-indent: 0;
+    background: none;
+    }
+
+  div#header div.logo img { height: 28px; width: auto; vertical-align: middle; }
+
+  div#header div.site-name {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    margin: 12px 0px;
+    padding-left: 10px;
+    }
+
+  /* The breadcrumb, the main tabs and the page tabs: one line each, and
+     the tabs scroll sideways instead of wrapping. */
+  div#navigation div.breadcrumb {
+    float: none;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+  div#navigation ul.links,
+  div#header-region ul.tabs {
+    float: none;
+    display: block;
+    max-width: 100%;
+    padding: 0px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+
+  div#navigation ul.links li,
+  div#header-region ul.tabs li { float: none; display: inline-block; }
+
+  div#navigation ul.links a {
+    float: none;
+    display: inline-block;
+    line-height: 22px;
+    padding: 4px 10px;
+    margin: 0px 2px 0px 0px;
+    }
+
+  div#header-region ul.tabs li a { float: none; display: inline-block; padding: 5px 10px; }
+
+  div#header-region h1.page-title {
+    font-size: 22px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    padding-bottom: 6px;
+    }
 }

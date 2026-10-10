@@ -25,6 +25,7 @@
 
 <head>
   <?php print $head; ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
@@ -56,7 +57,7 @@
 
     <div id='header-region'><div class='limiter clearfix'>
       <?php if (!empty($header)): print $header; endif; ?>
-      <?php if (!empty($title)): ?><h2 class='page-title'><?php print $title; ?></h2><?php endif; ?>
+      <?php if (!empty($title)): ?><h1 class='page-title'><?php print $title; ?></h1><?php elseif (!empty($site_name)): ?><h1 class='page-title element-invisible'><?php print $site_name; ?></h1><?php endif; ?>
     </div></div>
 
     <div id='page'><div class='limiter clearfix'>

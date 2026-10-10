@@ -352,7 +352,7 @@ div#header-region {
   padding:20px 0px 0px;
   background:#e8e8e8 url(images/grid_e8.png) 50% 0% repeat; }
 
-div#header-region h2.page-title {
+div#header-region h1.page-title {
   border:0px;
   padding:0px 0px 10px;
   letter-spacing:-2px;
@@ -362,7 +362,7 @@ div#header-region h2.page-title {
   font-weight:normal;
   }
 
-  div#header-region h2.page-title span.label {
+  div#header-region h1.page-title span.label {
     font-size:13px;
     font-weight:bold;
     letter-spacing:0px;
@@ -1181,13 +1181,14 @@ a.hosting-button-enabled,
   -webkit-border-radius: 3px;
 }
 
+/* White on these backgrounds keeps at least 4.5:1, small text included. */
 a.hosting-button-enabled:hover {
-  background: #49a
+  background: #369
 }
 
 a.hosting-button-enabled {
   color:#fff;
-  background:#6ac;
+  background:#4372aa;
 }
 
 .hosting-button-disabled {
@@ -1196,11 +1197,11 @@ a.hosting-button-enabled {
 }
 
 a.hosting-button-stop {
-  background-color:#e66;
+  background-color:#c33;
 }
 
 a.hosting-button-stop:hover {
-  background-color:#c44;
+  background-color:#a33;
 }
 /**
  * CORE ADMIN =========================================================
@@ -1352,4 +1353,37 @@ span.txp-badge {
   padding: 3px 9px 4px;
   vertical-align: middle;
   white-space: nowrap;
+}
+
+/**
+ * NARROW SCREENS =====================================================
+ * Below the fixed layout's width the columns stack, and wide tables
+ * scroll inside the main column instead of widening the page.
+ */
+@media (max-width: 959px) {
+  body.aegir { min-width: 0; }
+
+  div.limiter,
+  body.wide div#page div.limiter {
+    width: auto;
+    max-width: 940px;
+    padding: 0px 10px;
+    }
+
+  div#page div.limiter { background: none; }
+
+  div#main,
+  body.wide div#main,
+  div.sidebar,
+  #hosting-task-list,
+  #hosting-server-info,
+  #hosting-platform-info,
+  #hosting-package-info,
+  #hosting-site-info,
+  #hosting-site-edit-info {
+    float: none;
+    width: auto;
+    }
+
+  div#main { overflow-x: auto; }
 }

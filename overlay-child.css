@@ -112,7 +112,7 @@ html.js body {
   -webkit-border-radius: 5px;
 }
 
-.overlay div#header-region h2.page-title {
+.overlay div#header-region h1.page-title {
   line-height: 30px;
   font-size: inherit;
   letter-spacing: normal;

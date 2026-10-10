@@ -25,7 +25,7 @@
   <div id='header-region'><div class='limiter clearfix'>
     <?php print render($page['header']); ?>
     <?php print render($title_prefix); ?>
-    <?php if ($title): ?><h2 class='page-title'><?php print $title ?></h2><?php endif; ?>
+    <?php if ($title): ?><h1 class='page-title'><?php print $title ?></h1><?php elseif (!empty($site_name)): ?><h1 class='page-title element-invisible'><?php print $site_name; ?></h1><?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
   </div></div>
